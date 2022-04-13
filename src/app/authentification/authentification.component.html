@@ -1,0 +1,25 @@
+<div id="body">
+  <div class="loader_bg">
+    <div class="loader">
+      <img alt="#" src="assets/images/loading.gif"/>
+    </div>
+  </div>
+  <div class="">
+    <form (ngSubmit)="loginuser()" class="container mt-2 mr-3">
+      <div class="imgcontainer">
+        <img
+          alt="login"
+          class="avatar"
+          src="https://previews.123rf.com/images/vitechek/vitechek1907/vitechek190700199/126786791-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%98%90%EB%8A%94-%EC%9D%B8%EC%A6%9D-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%82%AC%EB%9E%8C-%EA%B8%B0%ED%98%B8%EC%9E%85%EB%8B%88%EB%8B%A4-%EB%B2%A1%ED%84%B0.jpg">
+      </div>
+      <div class="container">
+        <label for="email"><strong>E-mail</strong></label>
+        <input [(ngModel)]="pelerin.email" id="email" name="email" placeholder="Enter your e_mail" required type="text">
+        <label for="password"><strong>Password</strong></label>
+        <input [(ngModel)]="pelerin.password" id="password" name="password" placeholder="Enter your password" required
+               type="password">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+</div>

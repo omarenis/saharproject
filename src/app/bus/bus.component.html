@@ -1,0 +1,42 @@
+<div id="body">
+<img src="https://www.bus.man.eu/man/media/content_medien/images/global_corporate_website/presse_und_medien/mtb/2017_13/P_Bus_EOT_SAPTCO.jpg" height="300px" width="600px" style="box-shadow: 20px 20px 50px grey;margin-top: 20px;margin-left: 20px">
+<img src="https://www.bus-planet.com/bus/pictures/Saoudi-Arabia/CK-KSA-1310.jpg" height="300px" width="600px" style="box-shadow: 20px 20px 50px grey;margin-left: 20px">
+<img src="https://www.chinabuses.org/uploadfile/2016/1202/20161202052205943.jpg" height="300px" width="600px" style="box-shadow: 20px 20px 50px grey;margin-left: 20px">
+<div class="1" style="background-color:transparent; margin-left:680px;height: 100px;width:350px;margin-top: -700px">
+  <p align="center"> Ce bus "AlRabi" va s'occuper de vous à Mekka</p>
+  <ul>
+    <li>Traject de l'aéroport vers le premier hôtel</li>
+    <li>Toutes les visites à Mekka</li>
+  </ul>
+</div>
+<div class="2" style="background-color:lavender;margin-left:680px;height:  100px;width:350px;margin-top:-350px">
+  <p align="center"> Ce bus "QAID" va s'occuper de vous à Medina inclus le trajet de Medina à l'aéroport</p>
+</div>
+<div class="3" style="background-color:lavender;margin-left: 680px;height: 100px;width: 350px;margin-top: 750px">
+<p align="center">Ce bus "SAPTCO" va s'occuper de vous à Muzdalfa,Mina et Arafet</p>
+</div>
+<div >
+  <table class="table table-dark" style="margin-top: 250px;width: 750px;margin-left: 160px" >
+
+    <tbody>
+    <tr>
+      <th scope="row" style="	background-color: #DCDCDC; color: black">Matriculle</th>
+      <td *ngFor="let bus of bus" align="center" style="background-color: #DCDCDC; color: black"><h5>{{bus.matriculle}}</h5></td>
+
+    </tr>
+    <tr>
+      <th scope="row" style="background-color:#808080">Nom</th>
+      <td *ngFor="let bus of bus" align="center" style="background-color:#808080"><h5>{{bus.nom}}</h5></td>
+
+    </tr>
+    <tr>
+      <th scope="row" style="	background-color: #DCDCDC; color: black">Type</th>
+      <td *ngFor="let bus of bus" align="center" style="	background-color: #DCDCDC; color: black" ><h5>{{bus.type}}</h5></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+

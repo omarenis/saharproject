@@ -1,0 +1,93 @@
+<form>
+  <h1>A Fancy Table</h1>
+  <table id="customers">
+    <tr>
+      <th>Quad S</th>
+      <th>Quad</th>
+      <th>Triple</th>
+      <th>Double</th>
+      <th>Single</th>
+    </tr>
+    <tr *ngFor="let element of data; let i=index;">
+      <td>..</td>
+      <td>{{element.quad}} €<br>
+        <button (click)="addData(element.quad, 'quad')">
+          <img height="30ox" src="assets/images/yes.jpg" width="30px">
+        </button>
+      </td>
+      <td>{{element.triple}} €<br>
+        <button (click)="addData(element.triple, 'triple')">
+          <img height="30ox" src="assets/images/yes.jpg" width="30px">
+        </button>
+      </td>
+      <td>{{element.double}} €<br>
+        <button (click)="addData(element.double, 'double')">
+          <img height="30ox" src="assets/images/yes.jpg" width="30px">
+        </button>
+      </td>
+      <td>Nous consulter</td>
+    </tr>
+  </table>
+  <h3 class="mt-3 text-white">Séléctionnez votre date de départ</h3>
+  <select>
+    <option>28/06/2022</option>
+  </select>
+  <br><br>
+  <h3>Sélectionnez votre pays de départ</h3>
+  <select>
+    <option>Tunisie</option>
+  </select><br><br><br><br>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label gray">
+      <h3 class="h3">Adultes ( + de 12 ans)</h3>
+    </label>
+    <div class="col-sm-9 input-group mb-3 w-25 d-flex justify-content-evently h-50">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">-</button>
+      </div>
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="quantityForAdults">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">+</button>
+      </div>
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="totalForAdults">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label gray">
+      <h3 class="h3">Enfants ( - de 12 ans)</h3>
+    </label>
+    <div class="input-group col-sm-9 mb-3 w-25 d-flex justify-content-evently h-50">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">-</button>
+      </div>
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="quantityForChildren">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">+</button>
+      </div>
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="totalForChildren">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">
+      <h3 class="h3">Bébé ( - de 2 ans)</h3>
+    </label>
+    <div class="col-sm-9 input-group mb-3 w-25 d-flex justify-content-evently h-50">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">-</button>
+      </div>
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="quantityForBabies">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">+</button>
+      </div>
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="totalForBabies">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label gray" for="staticEmail">
+      <h3 class="h3">Prix total</h3>
+    </label>
+    <div class="col-sm-7">
+      <input class="form-control w-25" id="staticEmail" type="text">
+    </div>
+  </div>
+</form>

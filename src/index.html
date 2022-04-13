@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pfafront</title>
+  <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" href="https://media.www.cabinet-d-expertcomptable.com/uploads/elementor/thumbs/tva-agence-de-voyage-o9i3hgixcje8lq8pv617zkz90du6rpya7zq2odw70o.jpg" type="image/gif" />
+  <!-- style css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- fevicon -->
+
+  <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <!-- owl stylesheets -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <style>
+    body, html {
+      height: 100%;
+    }
+
+    .parallax {
+      /* The image used */
+      background-image: url("assets/images/logo.jpg");
+
+      /* Full height */
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="parallax">
+  <app-root></app-root>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.0.0.min.js"></script>
+  <script src="assets/js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <!-- javascript -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    })
+  </script>
+
+</body>
+</html>

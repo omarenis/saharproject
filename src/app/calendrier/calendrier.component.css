@@ -1,0 +1,583 @@
+ .monthNoCol {
+  width: 3.2%
+}
+
+.monthTxtCol {
+  width: 10.9%;
+}
+
+.pnmlink {
+  color: #CDCDCD;
+  font-size: 0.8em;
+}
+
+#Calendar {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#Calendar h1 {
+  font-size: 12.0pt;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-weight: normal;
+}
+
+.Saprorar {
+  display: inline-block;
+  width: 0.1em;
+  height: 0;
+  border-style: solid;
+  border-width: 3.7px 0 3.7px 7.8px;
+  border-color: transparent transparent transparent #f3f6fd;
+  margin: 0 0.15em;
+}
+
+.Saprolar {
+  display: inline-block;
+  width: 0.1em;
+  height: 0;
+  border-style: solid;
+  border-width: 3.7px 7.8px 3.7px 0;
+  border-color: transparent #f3f6fd transparent transparent;
+  margin: 0 0.15em;
+}
+
+#Calendar tr {
+  height: 1.2em;
+}
+
+#Calendar tr:nth-child(even) {
+  vertical-align: top;
+  height: 1.5em;
+}
+
+#Calendar tr:nth-child(odd) {
+  vertical-align: middle;
+}
+
+#Calendar tr:first-child {
+  height: 1.7em;
+  vertical-align: bottom;
+}
+
+#Calendar tr:nth-child(2) {
+  vertical-align: bottom;
+  height: 1.2em;
+}
+
+#Calendar tr:first-child td:first-child {
+  -moz-border-radius-topleft: 11px;
+  -webkit-border-top-left-radius: 11px;
+  border-top-left-radius: 11px;
+}
+
+#Calendar tr:first-child td:last-child {
+  -moz-border-radius-topright: 11px;
+  -webkit-border-top-right-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+#Calendar tr:not(:first-child) td:last-child {
+  border-right: 1.5pt solid #355986;
+}
+
+#Calendar tr:last-child td:last-child {
+  vertical-align: bottom;
+}
+
+.Sapro905554 {
+  color: navy;
+  font-size: 11.0pt;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.0pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro915554 {
+  color: maroon;
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro925554 {
+  color: maroon;
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-right: 1.5pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro935554 {
+  color: navy;
+  font-size: 11.0pt;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.5pt solid #355986;
+}
+
+.Sapro945554 {
+  color: maroon;
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+}
+
+.Sapro955554 {
+  color: navy;
+  font-size: 11.0pt;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.0pt solid #355986;
+}
+
+.Sapro965554 {
+  font-size: 12.0pt;
+}
+
+.Sapro975554 {
+  color: white;
+  font-size: 10.0pt;
+  text-align: center;
+  border-top: 1.0pt solid white;
+  border-right: 1.0pt solid white;
+  border-left: 1.5pt solid #355986;
+  background: #355986;
+}
+
+.Sapro985554 {
+  color: white;
+  font-size: 10.0pt;
+  text-align: center;
+  border-top: 1.0pt solid white;
+  border-right: 1.0pt solid white;
+  border-left: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro995554 {
+  color: yellow;
+  font-size: 10.0pt;
+  text-align: center;
+  border-top: 1.0pt solid white;
+  border-right: 1.0pt solid white;
+  border-left: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro1015554 {
+  color: #003366;
+  font-size: 6.0pt;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1035554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.5pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1045554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1055554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1065554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.5pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1085554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1095554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.0pt solid #355986;
+}
+
+.Sapro1115554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.0pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro1145554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.5pt solid #355986;
+}
+
+.Sapro1155554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1165554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-right: 1.5pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1175554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  border-left: 1.5pt solid #355986;
+}
+
+.Sapro1195554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  border-left: 1.0pt solid #355986;
+}
+
+.Sapro1205554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  border-left: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1215554 {
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1235554 {
+  color: white;
+  font-size: 12.0pt;
+  text-align: center;
+  border-bottom: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro1245554 {
+  color: #CDCDCD;
+  font-size: 0.8em;
+  text-align: right;
+  border-bottom: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro1265554 {
+  color: #CDCDCD;
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.0pt solid white;
+  background: #355986;
+}
+   .monthNoCol {
+  width: 3.2%
+}
+
+.monthTxtCol {
+  width: 10.9%;
+}
+
+.pnmlink {
+  color: #CDCDCD;
+  font-size: 0.8em;
+}
+
+#Calendar {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#Calendar h1 {
+  font-size: 12.0pt;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0.1em;
+  font-weight: normal;
+}
+
+.Saprorar {
+  display: inline-block;
+  width: 0.1em;
+  height: 0;
+  border-style: solid;
+  border-width: 3.7px 0 3.7px 7.8px;
+  border-color: transparent transparent transparent #f3f6fd;
+  margin: 0 0.15em;
+}
+
+.Saprolar {
+  display: inline-block;
+  width: 0.1em;
+  height: 0;
+  border-style: solid;
+  border-width: 3.7px 7.8px 3.7px 0;
+  border-color: transparent #f3f6fd transparent transparent;
+  margin: 0 0.15em;
+}
+
+#Calendar tr {
+  height: 1.2em;
+}
+
+#Calendar tr:nth-child(even) {
+  vertical-align: top;
+  height: 1.5em;
+}
+
+#Calendar tr:nth-child(odd) {
+  vertical-align: middle;
+}
+
+#Calendar tr:first-child {
+  height: 1.7em;
+  vertical-align: bottom;
+}
+
+#Calendar tr:nth-child(2) {
+  vertical-align: bottom;
+  height: 1.2em;
+}
+
+#Calendar tr:first-child td:first-child {
+  -moz-border-radius-topleft: 11px;
+  -webkit-border-top-left-radius: 11px;
+  border-top-left-radius: 11px;
+}
+
+#Calendar tr:first-child td:last-child {
+  -moz-border-radius-topright: 11px;
+  -webkit-border-top-right-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+#Calendar tr:not(:first-child) td:last-child {
+  border-right: 1.5pt solid #355986;
+}
+
+.Sapro905584 {
+  color: navy;
+  font-size: 11.0pt;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.0pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro915584 {
+  color: maroon;
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro925584 {
+  color: maroon;
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-right: 1.5pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro935584 {
+  color: navy;
+  font-size: 11.0pt;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.5pt solid #355986;
+}
+
+.Sapro945584 {
+  color: maroon;
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+}
+
+.Sapro955584 {
+  color: navy;
+  font-size: 11.0pt;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.0pt solid #355986;
+}
+
+.Sapro965584 {
+  font-size: 12.0pt;
+}
+
+.Sapro975584 {
+  color: white;
+  font-size: 10.0pt;
+  text-align: center;
+  border-top: 1.0pt solid white;
+  border-right: 1.0pt solid white;
+  border-left: 1.5pt solid #355986;
+  background: #355986;
+}
+
+.Sapro985584 {
+  color: white;
+  font-size: 10.0pt;
+  text-align: center;
+  border-top: 1.0pt solid white;
+  border-right: 1.0pt solid white;
+  border-left: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro995584 {
+  color: yellow;
+  font-size: 10.0pt;
+  text-align: center;
+  border-top: 1.0pt solid white;
+  border-right: 1.0pt solid white;
+  border-left: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro1015584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.5pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1025584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1035584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-top: 1.0pt solid #355986;
+  border-left: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1045584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.5pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1065584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.0pt solid #355986;
+  background: #D9D9D9;
+}
+
+.Sapro1075584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.0pt solid #355986;
+}
+
+.Sapro1095584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.0pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro1125584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-left: 1.5pt solid #355986;
+}
+
+.Sapro1135584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  border-left: 1.5pt solid #355986;
+}
+
+.Sapro1155584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  border-left: 1.0pt solid #355986;
+}
+
+.Sapro1165584 {
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.5pt solid #355986;
+  border-left: 1.0pt solid #355986;
+  background: #F9F9E1;
+}
+
+.Sapro1205584 {
+  color: white;
+  font-size: 12.0pt;
+  text-align: center;
+  border-bottom: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro1215584 {
+  color: #CDCDCD;
+  font-size: 0.8em;
+  text-align: right;
+  border-bottom: 1.0pt solid white;
+  background: #355986;
+}
+
+.Sapro1235584 {
+  color: #CDCDCD;
+  font-size: 0.8em;
+  text-align: left;
+  border-bottom: 1.0pt solid white;
+  background: #355986;
+}

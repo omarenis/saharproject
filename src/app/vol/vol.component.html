@@ -1,0 +1,47 @@
+<div id="body">
+<img src="https://worldairlinenews.files.wordpress.com/2015/06/saudia-a330-300-regional-96fltairbuslrw.jpg?w=625" height="300px" width="600px" style="margin-left: 230px;margin-top: 20px" >
+<img src="https://www.flyingsmart.info/wp-content/uploads/2018/08/WP_20180214_17_04_01_Pro-1000x600.jpg" height="300px" width="600px"  style="margin-left: 230px;margin-top: 20px;">
+<div style="margin-top: 20px">
+  <table class="table table-dark"  style="width: 500px ;margin-left: 278px" >
+
+    <tbody>
+    <tr>
+      <th scope="row" >Numéro</th>
+      <td *ngFor="let vol of vols" align="center" style="color:white"><h5>{{vol.numero}}</h5></td>
+
+    </tr>
+    <tr>
+      <th scope="row" style="background-color:#6188ff">Date de départ</th>
+      <td *ngFor="let vol of vols" align="center" style="background-color: #6188ff"><h5>{{vol.date_depart}}</h5></td>
+
+    </tr>
+
+    <tr>
+      <th scope="row">Heure de départ</th>
+      <td *ngFor="let vol of vols" align="center" style="color: white" ><h5>{{vol.heure_depart}}</h5></td>
+
+    </tr>
+    <tr>
+      <th scope="row" style="background-color:#6188ff">Date d'arrivée</th>
+      <td *ngFor="let vol of vols" align="center" style="background-color: #6188ff"><h5>{{vol.date_arrivee}}</h5></td>
+
+    </tr>
+    <tr>
+      <th scope="row" >Heure d'arrivée</th>
+      <td *ngFor="let vol of vols" align="center" style="color: white"><h5>{{vol.heure_arrivee}}</h5></td>
+
+    </tr>
+    <tr>
+      <th scope="row" style="background-color:#6188ff">Airport de départ</th>
+      <td *ngFor="let vol of vols" align="center" style="background-color: #6188ff" ><h5>{{vol.airport_depart}}</h5></td>
+
+    <tr>
+      <th scope="row" >Airport d'arrivée</th>
+      <td *ngFor="let vol of vols" align="center" style="color: white"><h5>{{vol.airport_arrivee}}</h5></td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
