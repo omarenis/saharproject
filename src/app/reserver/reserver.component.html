@@ -43,13 +43,14 @@
     </label>
     <div class="col-sm-9 input-group mb-3 w-25 d-flex justify-content-evently h-50">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button">-</button>
+        <button class="btn btn-outline-secondary" type="button" (click)="actionMinus('forAdults')">-</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="quantityForAdults">
-      <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button">+</button>
+      <input aria-describedby="basic-addon1" name="quantityForAdults" [(ngModel)]="quantityForAdults" aria-label="" class="form-control" placeholder="" readonly type="text">
+      <div class="input-group-prepend" >
+        <button class="btn btn-outline-secondary" type="button" (click)="actionAdd('forAdults')">+</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="totalForAdults">
+      <input aria-describedby="basic-addon1" name="totalForAdults" aria-label="" class="form-control" placeholder="" readonly type="text"
+             [(ngModel)]="totalForAdults">
     </div>
   </div>
   <div class="form-group row">
@@ -58,13 +59,13 @@
     </label>
     <div class="input-group col-sm-9 mb-3 w-25 d-flex justify-content-evently h-50">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button">-</button>
+        <button class="btn btn-outline-secondary" type="button" (click)="actionMinus('forChildren')">-</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="quantityForChildren">
+      <input aria-describedby="basic-addon1" name="quantityForChildren" [(ngModel)]="quantityForChildren" aria-label="" class="form-control" placeholder="" readonly type="text">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button">+</button>
+        <button class="btn btn-outline-secondary" type="button" (click)="actionAdd('forChildren')">+</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="totalForChildren">
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" name="totalForChildren" readonly type="text" [(ngModel)]="totalForChildren">
     </div>
   </div>
   <div class="form-group row">
@@ -73,13 +74,13 @@
     </label>
     <div class="col-sm-9 input-group mb-3 w-25 d-flex justify-content-evently h-50">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button">-</button>
+        <button class="btn btn-outline-secondary" type="button" (click)="actionMinus('forBabies')">-</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="quantityForBabies">
+      <input aria-describedby="basic-addon1" [(ngModel)]="quantityForBabies" name="quantityForBabies" aria-label="" class="form-control" placeholder="" readonly type="text">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button">+</button>
+        <button class="btn btn-outline-secondary" type="button" (click)="actionAdd('forBabies')">+</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" readonly type="text" [value]="totalForBabies">
+      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" name="totalForBabies" readonly type="text" [(ngModel)]="totalForBabies">
     </div>
   </div>
   <div class="form-group row">
@@ -87,7 +88,7 @@
       <h3 class="h3">Prix total</h3>
     </label>
     <div class="col-sm-7">
-      <input class="form-control w-25" id="staticEmail" type="text">
+      <input class="form-control w-25" id="staticEmail" type="text" name="price" [(ngModel)]="price">
     </div>
   </div>
 </form>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-reserver',
@@ -25,7 +25,8 @@ export class ReserverComponent implements OnInit {
   priceForQuad !: number;
   priceForDouble !: number;
   priceForTriple !: number;
-  constructor() { }
+  price !: number;
+  constructor() {}
 
   ngOnInit(): void {
     this.discountChildUpto12 = 0;
@@ -34,11 +35,12 @@ export class ReserverComponent implements OnInit {
     this.totalForBabies = 0;
     this.changeDiscounts('quad');
   }
+
   calculateWIthDiscount(unitPrice: number, quantity: number, discount: number): number {
     return unitPrice * quantity * (1 - discount / 100);
   }
-  changeDiscounts(typeQuad: string)
-  {
+
+  changeDiscounts(typeQuad: string) {
     if (typeQuad === 'quad') {
       this.discountChildUnder12 = 1.68;
       this.discountForBabies = 3.93;
@@ -50,6 +52,7 @@ export class ReserverComponent implements OnInit {
       this.discountForBabies = 3.2;
     }
   }
+
   addData(price: number, typeQuad: string) {
     this.typeQuad = typeQuad;
     this.changeDiscounts(typeQuad);
@@ -57,36 +60,46 @@ export class ReserverComponent implements OnInit {
     this.totalForChildren = Math.floor(this.calculateWIthDiscount(price, this.quantityForChildren, this.discountChildUnder12));
     this.totalForBabies = Math.floor(this.calculateWIthDiscount(price, this.quantityForBabies, this.discountForBabies));
   }
-  actionAdd(typePurchase: string){
-    switch(typePurchase)
-    {
+
+  actionAdd(typePurchase: string) {
+    switch (typePurchase) {
       case 'forAdults':
-        this.quantityForAdults++;
         this.totalForAdults = Math.floor(this.totalForAdults * (1 + 1 / this.quantityForAdults));
+        this.quantityForAdults++;
         break;
       case 'forChildren':
-        this.quantityForChildren++;
         this.totalForChildren = Math.floor(this.totalForChildren * (1 + 1 / this.quantityForChildren));
+        this.quantityForChildren++;
         break;
       case 'forBabies':
-        this.quantityForBabies++;
         this.totalForBabies = Math.floor(this.totalForBabies * (1 + 1 / this.quantityForBabies));
+        this.quantityForBabies++;
         break;
     }
+    this.price = this.totalForAdults + this.totalForChildren + this.totalForBabies;
   }
 
-  actionMinus(typePurchase: string){
-    switch(typePurchase)
-    {
+  actionMinus(typePurchase: string) {
+    switch (typePurchase) {
       case 'forAdults':
-        this.quantityForAdults--;
+        if (this.quantityForAdults > 1) {
+          this.totalForAdults = Math.floor(this.totalForAdults * (1 - 1 / this.quantityForAdults));
+          this.quantityForAdults--;
+        }
         break;
       case 'forChildren':
-        this.quantityForChildren--;
+        if (this.quantityForChildren > 1) {
+          this.totalForChildren = Math.floor(this.totalForChildren * (1 - 1 / this.quantityForChildren));
+          this.quantityForChildren--;
+        }
         break;
       case 'forBabies':
-        this.quantityForBabies--;
+        if (this.quantityForBabies > 1) {
+          this.totalForBabies = Math.floor(this.totalForBabies * (1 - 1 / this.quantityForBabies));
+          this.quantityForBabies--;
+        }
         break;
     }
+    this.price = this.totalForAdults + this.totalForChildren + this.totalForBabies;
   }
 }
