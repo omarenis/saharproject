@@ -12,6 +12,7 @@ import {OffreComponent} from "./offre/offre.component";
 import {OffreCourtComponent} from "./offre-court/offre-court.component";
 import {OffreLongComponent} from "./offre-long/offre-long.component";
 import {ReserverComponent} from "./reserver/reserver.component";
+import { InvoiceComponent } from './invoice/invoice.component';
 
 
 const routes :  Routes =[
@@ -25,7 +26,8 @@ const routes :  Routes =[
   {component:OffreComponent,path:'offre'},
   {component:OffreLongComponent,path:'offrelong'},
   {component:OffreCourtComponent,path:'offrecourt'},
-  {component:ReserverComponent,path:'reserver'}
+  {component:ReserverComponent,path:'reserver'},
+  {path: 'billing', component: InvoiceComponent}
 
 ]
 

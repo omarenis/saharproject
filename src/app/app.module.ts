@@ -28,7 +28,8 @@ import { OffreComponent } from './offre/offre.component';
 import { OffreCourtComponent } from './offre-court/offre-court.component';
 import { OffreLongComponent } from './offre-long/offre-long.component';
 import { ReserverComponent } from './reserver/reserver.component';
-import { NavbarComponent } from './components/navbar/navbar.component'; // a plugin!
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { InvoiceComponent } from './invoice/invoice.component'; // a plugin!
 
 
 
@@ -53,7 +54,8 @@ import { NavbarComponent } from './components/navbar/navbar.component'; // a plu
     OffreCourtComponent,
     OffreLongComponent,
     ReserverComponent,
-    NavbarComponent
+    NavbarComponent,
+    InvoiceComponent
 
   ],
   imports: [

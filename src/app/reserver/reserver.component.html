@@ -17,12 +17,12 @@
       </td>
       <td>{{element.triple}} €<br>
         <button (click)="addData(element.triple, 'triple')">
-          <img height="30ox" src="assets/images/yes.jpg" width="30px">
+          <img alt="plus" height="30ox" src="assets/images/yes.jpg" width="30px">
         </button>
       </td>
       <td>{{element.double}} €<br>
         <button (click)="addData(element.double, 'double')">
-          <img height="30ox" src="assets/images/yes.jpg" width="30px">
+          <img alt="plus" height="30ox" src="assets/images/yes.jpg" width="30px">
         </button>
       </td>
       <td>Nous consulter</td>
@@ -43,14 +43,16 @@
     </label>
     <div class="col-sm-9 input-group mb-3 w-25 d-flex justify-content-evently h-50">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button" (click)="actionMinus('forAdults')">-</button>
+        <button (click)="actionMinus('forAdults')" class="btn btn-outline-secondary" type="button">-</button>
       </div>
-      <input aria-describedby="basic-addon1" name="quantityForAdults" [(ngModel)]="quantityForAdults" aria-label="" class="form-control" placeholder="" readonly type="text">
-      <div class="input-group-prepend" >
-        <button class="btn btn-outline-secondary" type="button" (click)="actionAdd('forAdults')">+</button>
+      <input [(ngModel)]="quantityForAdults" aria-describedby="basic-addon1" aria-label="" class="form-control"
+             name="quantityForAdults" placeholder="" readonly type="text">
+      <div class="input-group-prepend">
+        <button (click)="actionAdd('forAdults')" class="btn btn-outline-secondary" type="button">+</button>
       </div>
-      <input aria-describedby="basic-addon1" name="totalForAdults" aria-label="" class="form-control" placeholder="" readonly type="text"
-             [(ngModel)]="totalForAdults">
+      <input [(ngModel)]="totalForAdults" aria-describedby="basic-addon1" aria-label="" class="form-control" name="totalForAdults"
+             placeholder="" readonly
+             type="text">
     </div>
   </div>
   <div class="form-group row">
@@ -59,13 +61,15 @@
     </label>
     <div class="input-group col-sm-9 mb-3 w-25 d-flex justify-content-evently h-50">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button" (click)="actionMinus('forChildren')">-</button>
+        <button (click)="actionMinus('forChildren')" class="btn btn-outline-secondary" type="button">-</button>
       </div>
-      <input aria-describedby="basic-addon1" name="quantityForChildren" [(ngModel)]="quantityForChildren" aria-label="" class="form-control" placeholder="" readonly type="text">
+      <input [(ngModel)]="quantityForChildren" aria-describedby="basic-addon1" aria-label="" class="form-control"
+             name="quantityForChildren" placeholder="" readonly type="text">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button" (click)="actionAdd('forChildren')">+</button>
+        <button (click)="actionAdd('forChildren')" class="btn btn-outline-secondary" type="button">+</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" name="totalForChildren" readonly type="text" [(ngModel)]="totalForChildren">
+      <input [(ngModel)]="totalForChildren" aria-describedby="basic-addon1" aria-label="" class="form-control" name="totalForChildren"
+             placeholder="" readonly type="text">
     </div>
   </div>
   <div class="form-group row">
@@ -74,21 +78,48 @@
     </label>
     <div class="col-sm-9 input-group mb-3 w-25 d-flex justify-content-evently h-50">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button" (click)="actionMinus('forBabies')">-</button>
+        <button (click)="actionMinus('forBabies')" class="btn btn-outline-secondary" type="button">-</button>
       </div>
-      <input aria-describedby="basic-addon1" [(ngModel)]="quantityForBabies" name="quantityForBabies" aria-label="" class="form-control" placeholder="" readonly type="text">
+      <input [(ngModel)]="quantityForBabies" aria-describedby="basic-addon1" aria-label="" class="form-control"
+             name="quantityForBabies" placeholder="" readonly type="text">
       <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button" (click)="actionAdd('forBabies')">+</button>
+        <button (click)="actionAdd('forBabies')" class="btn btn-outline-secondary" type="button">+</button>
       </div>
-      <input aria-describedby="basic-addon1" aria-label="" class="form-control" placeholder="" name="totalForBabies" readonly type="text" [(ngModel)]="totalForBabies">
+      <input [(ngModel)]="totalForBabies" aria-describedby="basic-addon1" aria-label="" class="form-control" name="totalForBabies"
+             placeholder="" readonly type="text">
     </div>
   </div>
   <div class="form-group row">
-    <label class="col-sm-3 col-form-label gray" for="staticEmail">
+    <label class="col-sm-3 col-form-label gray" for="total">
       <h3 class="h3">Prix total</h3>
     </label>
     <div class="col-sm-7">
-      <input class="form-control w-25" id="staticEmail" type="text" name="price" [(ngModel)]="price">
+      <input [(ngModel)]="price" class="form-control w-25" id="total" name="price" type="text">
     </div>
   </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label text-white" for="nom">nom</label>
+    <div class="col-sm-7">
+      <input class="form-control" id="nom" type="text" value="" name="nom" [(ngModel)]="person.nom">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label text-white" for="inputPassword">prenom</label>
+    <div class="col-sm-7">
+      <input class="form-control" id="inputPassword" placeholder="" type="text" name="prenom" [(ngModel)]="person.prenom">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label text-white" for="cin">cin</label>
+    <div class="col-sm-7">
+      <input class="form-control" id="cin" type="text" name="cin" [(ngModel)]="person.cin">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label text-white" for="passport">passport</label>
+    <div class="col-sm-7">
+      <input class="form-control" id="passport" placeholder="text" type="text" name="passport" [(ngModel)]="person.passport">
+    </div>
+  </div>
+  <button class="btn btn-success w-25" (click)="displayCommand()">reserver</button>
 </form>
